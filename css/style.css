@@ -2,6 +2,7 @@ html{
     overflow-x: hidden;
 }
 body{
+    font-family: "Montserrat";
 }
 *{
     box-sizing: border-box;
@@ -33,6 +34,150 @@ ul{
 
 }
 
-@media only screen and (max-width: 900px){
+.convergence {
+}
+.convergence__body {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 25px 4.1% 0 9.4%;
+}
 
+.convergence__info {
+    max-width: 545px;
+    padding: 40px 0 0 0;
+}
+
+.convergence__title {
+    font-family: "Quattrocento";
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 300;
+    max-width: 515px;
+    margin: 0 0 100px 0;
+}
+.convergence__title span:first-child{
+    vertical-align: top;
+    font-size: 14px;
+    opacity: 0.55;
+}
+.convergence__title span:nth-child(2){
+    color: #71870E;
+}
+.convergence__title span:nth-child(3){
+    font-style: italic;
+    font-weight: 700;
+}
+.convergence__text{
+    line-height: 28px;
+    opacity: 0.85;
+    margin: 0 0 0 150px;
+}
+.convergence__text p:first-child{
+    margin: 0 0 25px 0;
+}
+.convergence__info-btn{
+    margin: 70px 0 0 150px;
+    position: relative;
+}
+.convergence__info-btn a{
+    line-height: 24px;
+    color: #CD9A3D;
+}
+.convergence__info-btn img{
+    left: -140px;
+    top: 10px;
+    position: absolute;
+}
+
+.convergence__photos {
+    width: 603px;
+    position: relative;
+}
+.convergence__photos picture:nth-child(2){
+    position: absolute;
+    width: 260px;
+    top: 208px;
+    right: 0px;
+}
+.convergence__photos p{
+    margin: 75px 0 0 110px;
+    line-height: 24px;
+    color: #71870E;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1250px){
+    .convergence__body{
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 25px 4.1% 0 25%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .convergence__body{
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 25px 10% 0 10%;
+    }
+}
+@media only screen and (max-width: 620px){
+    .convergence__photos{
+        max-width: 634px;
+        overflow: hidden;
+    }
+    .convergence__photos picture:nth-child(1){
+        width: 100%;
+        height: auto;
+    }
+    .convergence__photos picture:nth-child(2){
+        top: auto;
+        bottom: 20px;
+        right: -30px;
+        width: 62%;
+        height: auto;
+    }
+    .convergence__photos p{
+        opacity: 0;
+    }
+    .convergence__text{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 400px){
+    .convergence__body{
+        padding: 0;
+    }
+    .convergence__info{
+        padding: 0 10px;
+        max-width: none;
+    }
+    .convergence__title{
+        text-align: center;
+        margin: 0 0 25px 0;
+    }
+    .convergence__title span:first-child{
+        display: none;
+    }
+    .convergence__info-btn{
+        margin: 25px 0 0 75%;
+    }
+    .convergence__photos picture:nth-child(2){
+        top: auto;
+        bottom: 20px;
+        right: 0px;
+        width: 62%;
+        height: auto;
+    }
 }
