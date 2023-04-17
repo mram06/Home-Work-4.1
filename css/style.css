@@ -1,8 +1,41 @@
+@font-face {
+    font-family: "Ogg Regular";
+    src: url('../fonts/OggRegular.woff2') format('woff2'),
+        url('../fonts/OggRegular.woff') format('woff'),
+        url('../fonts/OggRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Ogg Regular";
+    src: url('../fonts/OggLight.woff2') format('woff2'),
+        url('../fonts/OggLight.woff') format('woff'),
+        url('../fonts/OggLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Ogg Regular";
+    src: url('../fonts/OggMediumItalic.woff2') format('woff2'),
+        url('../fonts/OggMediumItalic.woff') format('woff'),
+        url('../fonts/OggMediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "TradeGothic";
+    src: url('../fonts/Trade\ Gothic\ LT\ Extended.woff2') format('woff2'),
+        url('../fonts/Trade\ Gothic\ LT\ Extended.woff') format('woff'),
+        url('../fonts/Trade\ Gothic\ LT\ Extended.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html{
     overflow-x: hidden;
 }
 body{
-    font-family: "Montserrat";
+    font-family: "TradeGothic";
 }
 *{
     box-sizing: border-box;
@@ -49,7 +82,7 @@ ul{
 }
 
 .convergence__title {
-    font-family: "Quattrocento";
+    font-family: "Ogg Regular";
     font-size: 60px;
     line-height: 64px;
     font-weight: 300;
@@ -57,6 +90,7 @@ ul{
     margin: 0 0 100px 0;
 }
 .convergence__title span:first-child{
+    font-family: "TradeGothic";
     vertical-align: top;
     font-size: 14px;
     opacity: 0.55;
@@ -66,7 +100,7 @@ ul{
 }
 .convergence__title span:nth-child(3){
     font-style: italic;
-    font-weight: 700;
+    font-weight: 500;
 }
 .convergence__text{
     line-height: 28px;
@@ -106,17 +140,6 @@ ul{
     color: #71870E;
     opacity: 0.8;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 1250px){
     .convergence__body{
